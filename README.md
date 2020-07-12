@@ -13,3 +13,4 @@ git clone https://github.com/Abandon339/HDU-jizu-RIJ_CPU
 ```
 
 IP核使用了一个ROM用于指令存储，由于上板子时用IP核建立的数据存储器会有一个周期的延时（有能解决的人可以issues），所以妥协使用二维数组。
+vivado用户可以直接运行，ISE用户可以到`RIJ_CPU\RIJ_CPU.srcs`目录下查看源码，constrs_1 - 约束文件， sim_1 - 仿真文件， source_1 - 设计design文件
