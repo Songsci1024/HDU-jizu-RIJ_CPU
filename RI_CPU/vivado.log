@@ -1,0 +1,2147 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 14 16:28:36 2020
+# Process ID: 2180
+# Current directory: E:/vivado_1/RI_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14088 E:\vivado_1\RI_CPU\RI_CPU.xpr
+# Log file: E:/vivado_1/RI_CPU/vivado.log
+# Journal file: E:/vivado_1/RI_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_1/RI_CPU/RI_CPU.xpr
+INFO: [Project 1-313] Project file moved from 'E:/vivado_1/R_CPU' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado_1/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 792.230 ; gain = 162.289
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/vivado_1/RI_CPU/mem-store.coe' provided. It will be converted relative to IP Instance files '../../../../mem-store.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1 -dir e:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {64} CONFIG.Read_Width_A {32} CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/vivado_1/RI_CPU/mem-store.coe} CONFIG.Fill_Remaining_Memory_Locations {true}] [get_ips blk_mem_gen_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/vivado_1/RI_CPU/mem-store.coe' provided. It will be converted relative to IP Instance files '../../../../mem-store.coe'
+generate_target {instantiation_template} [get_files e:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_1'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_1'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files e:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+launch_runs -jobs 2 blk_mem_gen_1_synth_1
+[Thu May 14 17:27:01 2020] Launched blk_mem_gen_1_synth_1...
+Run output will be captured here: E:/vivado_1/RI_CPU/RI_CPU.runs/blk_mem_gen_1_synth_1/runme.log
+export_simulation -of_objects [get_files e:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory E:/vivado_1/RI_CPU/RI_CPU.ip_user_files/sim_scripts -ip_user_files_dir E:/vivado_1/RI_CPU/RI_CPU.ip_user_files -ipstatic_source_dir E:/vivado_1/RI_CPU/RI_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/modelsim} {questa=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/questa} {riviera=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/riviera} {activehdl=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/vivado_1/RI_CPU/register_mem.coe' provided. It will be converted relative to IP Instance files '../../../../register_mem.coe'
+set_property -dict [list CONFIG.Coe_File {E:/vivado_1/RI_CPU/register_mem.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/vivado_1/RI_CPU/register_mem.coe' provided. It will be converted relative to IP Instance files '../../../../register_mem.coe'
+generate_target all [get_files  E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 2 blk_mem_gen_0_synth_1
+[Thu May 14 18:31:18 2020] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: E:/vivado_1/RI_CPU/RI_CPU.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory E:/vivado_1/RI_CPU/RI_CPU.ip_user_files/sim_scripts -ip_user_files_dir E:/vivado_1/RI_CPU/RI_CPU.ip_user_files -ipstatic_source_dir E:/vivado_1/RI_CPU/RI_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/modelsim} {questa=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/questa} {riviera=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/riviera} {activehdl=E:/vivado_1/RI_CPU/RI_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/xsim.dir/top_module_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 14 19:51:59 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1179.707 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_sim_behav -key {Behavioral:sim_1:Functional:top_module_sim} -tclbatch {top_module_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_module_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1179.707 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/Inst_code}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.410 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/clka}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/M_W_Data}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1256.414 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1257.523 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1257.523 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1258.480 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1258.480 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/M_R_Data}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/ALU_OP}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/W_Data}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/Mem_Addr}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/top_module_sim/test/mem_store/addra}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:118]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [VRFC 10-2458] undeclared symbol clka, assumed default net type wire [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:10]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register clka is not permitted, left-hand side should be reg/integer/time/genvar [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:20]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register clka is not permitted, left-hand side should be reg/integer/time/genvar [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:26]
+ERROR: [VRFC 10-2865] module 'top_module_sim' ignored due to previous errors [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [VRFC 10-2458] undeclared symbol clka, assumed default net type wire [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:10]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register clka is not permitted, left-hand side should be reg/integer/time/genvar [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:20]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register clka is not permitted, left-hand side should be reg/integer/time/genvar [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:26]
+ERROR: [VRFC 10-2865] module 'top_module_sim' ignored due to previous errors [E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:119]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1468.488 ; gain = 0.000
+create_project test111 E:/vivado_1/test111 -part xc7a100tfgg484-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado_1/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1468.488 ; gain = 0.000
+file mkdir E:/vivado_1/test111/test111.srcs/sources_1/new
+close [ open E:/vivado_1/test111/test111.srcs/sources_1/new/top.v w ]
+add_files E:/vivado_1/test111/test111.srcs/sources_1/new/top.v
+update_compile_order -fileset sources_1
+file mkdir E:/vivado_1/test111/test111.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v w ]
+add_files -fileset sim_1 E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado_1/test111/test111.sim/sim_1/behav/xsim/xsim.dir/sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 14 21:10:20 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/sim/test/clka}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/sim/test/flag}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1468.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1468.488 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/sim/test/clka}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1468.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/sim/test/clka}} 
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/sim/test/flag}} 
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/sim/test/flag}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/sim/test/clka}} 
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/sim/test/flag}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/sim/test/i}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/test111/test111.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/test111/test111.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e1eca7d9faa4ae7927d9a2161e27b38 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:01:20 ; elapsed = 00:01:18 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+relaunch_xsim_kernel: Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+current_project RI_CPU
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado_1/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/register_mem.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/mem-store.coe'
+INFO: [SIM-utils-43] Exported 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RI_CPU/RI_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado_1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6e7d454ebf5e4bf280dc614207f088e1 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_module_sim_behav xil_defaultlib.top_module_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_OP' [E:/vivado_1/RI_CPU/RI_CPU.srcs/sources_1/new/top_module.v:113]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_add
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.register_store
+Compiling module xil_defaultlib.ALU_32
+Compiling module xil_defaultlib.Decoding_control
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_1/RI_CPU/RI_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_sim_behav -key {Behavioral:sim_1:Functional:top_module_sim} -tclbatch {top_module_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_module_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.Inst_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_module_sim.test.mem_store.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:44 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:47 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1468.488 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 21:57:13 2020...
