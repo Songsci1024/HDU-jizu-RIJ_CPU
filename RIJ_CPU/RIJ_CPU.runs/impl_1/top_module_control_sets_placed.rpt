@@ -1,0 +1,160 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 10 20:10:21 2020
+| Host         : LAPTOP-9OSP4HOU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    96 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           96 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              33 |           17 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            3040 |         1060 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | RIJ/reg_store/E[0]                       | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[5]_inst_i_2_0[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_1[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_5[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_4_0[0]  | rst_IBUF         |               12 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_5_0[0]  | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_5_1[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_3_1[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_3[0]  | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_6[0]  | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_2[0]  | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_4[0]  | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_3_0[0]  | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_3_3[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[6]_inst_i_2_0[0]  | rst_IBUF         |               13 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_5_0[0]  | rst_IBUF         |               12 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[5]_inst_i_2_2[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[8]_inst_i_3_2[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[5]_inst_i_2_3[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/LED_OBUF[5]_inst_i_2_1[0]  | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_3[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[17][31]_i_2_1[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[49][31]_i_2_1[0] | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[50][31]_i_3_2[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[33][31]_i_3_2[0] | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[33][31]_i_3_0[0] | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_2[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[50][31]_i_3_0[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[33][31]_i_3_1[0] | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_9[0]  | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[17][31]_i_2_5[0] | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[32][31]_i_3_1[0] | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[49][31]_i_2_2[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[50][31]_i_3_1[0] | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[18][31]_i_2_0[0] | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[16][31]_i_3_1[0] | rst_IBUF         |                5 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_1[0]  | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[17][31]_i_2_4[0] | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[32][31]_i_3_2[0] | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[33][31]_i_3_4[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[33][31]_i_3_5[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[50][31]_i_2_0[0] | rst_IBUF         |                8 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[19][31]_i_2_0[0] | rst_IBUF         |               12 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[38][31]_i_2_0[0] | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[17][31]_i_2_2[0] | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_5[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_6[0]  | rst_IBUF         |               12 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_8[0]  | rst_IBUF         |               13 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_0[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_5_2[0]  | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_14[0] | rst_IBUF         |               12 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_7[0]  | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_12[0] | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_11[0] | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[16][31]_i_3_0[0] | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_4[0]  | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[17][31]_i_2_3[0] | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[26][31]_i_2_0[0] | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[17][31]_i_2_0[0] | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[32][31]_i_3_0[0] | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_10[0] | rst_IBUF         |                7 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[33][31]_i_3_3[0] | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[49][31]_i_2_0[0] | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | RIJ/reg_store/Mem_files[0][31]_i_6_13[0] | rst_IBUF         |                7 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[10][31]_i_1_n_0  | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[7][31]_i_1_n_0   | rst_IBUF         |               21 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[8][31]_i_1_n_0   | rst_IBUF         |               22 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[12][31]_i_1_n_0  | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[22][31]_i_1_n_0  | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[14][31]_i_1_n_0  | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[11][31]_i_1_n_0  | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[27][31]_i_1_n_0  | rst_IBUF         |               17 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[28][31]_i_1_n_0  | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[3][31]_i_1_n_0   | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[15][31]_i_1_n_0  | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[29][31]_i_1_n_0  | rst_IBUF         |               19 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[20][31]_i_1_n_0  | rst_IBUF         |               15 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[21][31]_i_1_n_0  | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[25][31]_i_1_n_0  | rst_IBUF         |                9 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[26][31]_i_1_n_0  | rst_IBUF         |               10 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[18][31]_i_1_n_0  | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[19][31]_i_1_n_0  | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[31][31]_i_1_n_0  | rst_IBUF         |               20 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[4][31]_i_1_n_0   | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[5][31]_i_1_n_0   | rst_IBUF         |               21 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files                  | rst_IBUF         |               13 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[17][31]_i_1_n_0  | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[30][31]_i_1_n_0  | rst_IBUF         |               21 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[13][31]_i_1_n_0  | rst_IBUF         |               14 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[16][31]_i_1_n_0  | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[23][31]_i_1_n_0  | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[2][31]_i_1_n_0   | rst_IBUF         |               12 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[6][31]_i_1_n_0   | rst_IBUF         |               16 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[24][31]_i_1_n_0  | rst_IBUF         |               10 |             32 |
+| ~clk_IBUF_BUFG | RIJ/reg_store/REG_files[9][31]_i_1_n_0   | rst_IBUF         |               23 |             32 |
+| ~clk_IBUF_BUFG |                                          | rst_IBUF         |               17 |             33 |
++----------------+------------------------------------------+------------------+------------------+----------------+
+
+

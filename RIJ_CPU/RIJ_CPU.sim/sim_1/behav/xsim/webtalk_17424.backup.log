@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jun  4 15:33:18 2020
+# Process ID: 17424
+# Current directory: E:/vivado_1/RIJ_CPU/RIJ_CPU.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/vivado_1/RIJ_CPU/RIJ_CPU.sim/sim_1/behav/xsim/xsim.dir/top_module_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/vivado_1/RIJ_CPU/RIJ_CPU.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/vivado_1/RIJ_CPU/RIJ_CPU.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/vivado_1/RIJ_CPU/RIJ_CPU.sim/sim_1/behav/xsim/xsim.dir/top_module_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 84.941 ; gain = 1.336
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun  4 15:33:23 2020...

@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/new/ALU_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/new/Decoding_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoding_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/new/PC_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/new/RIJ_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RIJ_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/new/mem_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sources_1/new/register_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_1/RIJ_CPU_/RIJ_CPU.srcs/sim_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim

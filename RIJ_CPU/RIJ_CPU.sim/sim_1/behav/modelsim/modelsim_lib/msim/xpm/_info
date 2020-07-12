@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/vivado_1/RIJ_CPU_/RIJ_CPU.sim/sim_1/behav/modelsim
+Pvcomponents
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1544171246
+R0
+8E:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd
+FE:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd
+l0
+L11
+VNKhlQ[[TdlS?ifBVM[kXe3
+!s100 ;>SEeaBPYBj8[m7>ack7Q3
+OL;C;10.6e;65
+31
+!s110 1591848395
+!i10b 1
+!s108 1591848395.000000
+!s90 -64|-93|-work|xpm|E:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd|
+!s107 E:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd|
+!i113 1
+o-93 -work xpm
+tExplicit 1 CvgOpt 0

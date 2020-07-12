@@ -1,0 +1,410 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/vivado_1/RIJ_CPU_/RIJ_CPU.sim/sim_1/behav/modelsim
+vALU_32
+!s10a 1589639251
+Z1 !s110 1591846702
+!i10b 1
+!s100 e[cNW]Ef;ooOVd4JYEG2j2
+I;hR;W40ej;_S_0Jec?l9H2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1589639251
+8../../../../RIJ_CPU.srcs/sources_1/new/ALU_32.v
+F../../../../RIJ_CPU.srcs/sources_1/new/ALU_32.v
+L0 2
+Z3 OL;L;10.6e;65
+r1
+!s85 0
+31
+Z4 !s108 1591846702.000000
+Z5 !s107 ../../../../RIJ_CPU.srcs/sim_1/new/top_module_sim.v|../../../../RIJ_CPU.srcs/sources_1/new/register_store.v|../../../../RIJ_CPU.srcs/sources_1/new/mem_store.v|../../../../RIJ_CPU.srcs/sources_1/new/RIJ_cpu.v|../../../../RIJ_CPU.srcs/sources_1/new/PC_add.v|../../../../RIJ_CPU.srcs/sources_1/new/Decoding_control.v|../../../../RIJ_CPU.srcs/sources_1/new/ALU_32.v|../../../../RIJ_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v|
+Z6 !s90 -64|-incr|-work|xil_defaultlib|../../../../RIJ_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v|../../../../RIJ_CPU.srcs/sources_1/new/ALU_32.v|../../../../RIJ_CPU.srcs/sources_1/new/Decoding_control.v|../../../../RIJ_CPU.srcs/sources_1/new/PC_add.v|../../../../RIJ_CPU.srcs/sources_1/new/RIJ_cpu.v|../../../../RIJ_CPU.srcs/sources_1/new/mem_store.v|../../../../RIJ_CPU.srcs/sources_1/new/register_store.v|../../../../RIJ_CPU.srcs/sim_1/new/top_module_sim.v|
+!i113 1
+Z7 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+n@a@l@u_32
+vasym_bwe_bb
+Z9 !s10a 1544171246
+Z10 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z11 !s110 1591846700
+!i10b 1
+!s100 jKP^O4MkdM5Qi90BUaEHc0
+IY_^APJ^eFgSLlU2>gLZ341
+R2
+Z12 !s105 xpm_memory_sv_unit
+S1
+R0
+Z13 w1544171246
+Z14 8E:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Z15 FE:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+L0 8013
+R3
+r1
+!s85 0
+31
+Z16 !s108 1591846699.000000
+Z17 !s107 E:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv|
+Z18 !s90 -64|-incr|-sv|-work|xil_defaultlib|E:/vivado_1/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv|
+!i113 1
+Z19 o-sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vblk_mem_gen_0
+!s10a 1591788034
+R1
+!i10b 1
+!s100 HcA<1`Gd_jDQ5j_IAY;Om2
+IN>@NNH@Fkjnf^LS[<b4[m0
+R2
+R0
+w1591788034
+8../../../../RIJ_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v
+F../../../../RIJ_CPU.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v
+L0 56
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vDecoding_control
+Z20 !s110 1591848396
+!i10b 1
+!s100 EJkVcnFRQ_a@Cn9[Onbfk3
+I6lN5=;D7c;j[dG]4lIm4g0
+R2
+R0
+w1591848114
+8../../../../RIJ_CPU.srcs/sources_1/new/Decoding_control.v
+F../../../../RIJ_CPU.srcs/sources_1/new/Decoding_control.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z21 !s108 1591848396.000000
+R5
+R6
+!i113 1
+R7
+R8
+n@decoding_control
+vglbl
+R20
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R2
+R0
+w1544155481
+8glbl.v
+Fglbl.v
+L0 6
+R3
+r1
+!s85 0
+31
+R21
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R7
+R8
+vmem_store
+!s10a 1591790408
+R1
+!i10b 1
+!s100 V6gDc4f0<mGFh2<^G7;cb0
+I9WDna>VnEREEaQiB<LdIW1
+R2
+R0
+w1591790408
+8../../../../RIJ_CPU.srcs/sources_1/new/mem_store.v
+F../../../../RIJ_CPU.srcs/sources_1/new/mem_store.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vPC_add
+!s10a 1591775132
+R1
+!i10b 1
+!s100 C81?oWAQUlV3hL08aTmoG2
+I8k^3K;17h4cj2ch:RKTgc0
+R2
+R0
+w1591775132
+8../../../../RIJ_CPU.srcs/sources_1/new/PC_add.v
+F../../../../RIJ_CPU.srcs/sources_1/new/PC_add.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+n@p@c_add
+vregister_store
+!s10a 1591847974
+Z22 !s110 1591848021
+!i10b 1
+!s100 bf>0gf@_OCHoj7`mDD1]>3
+Ie<8YV0627GC_Veemj7=bW2
+R2
+R0
+w1591847974
+8../../../../RIJ_CPU.srcs/sources_1/new/register_store.v
+F../../../../RIJ_CPU.srcs/sources_1/new/register_store.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z23 !s108 1591848021.000000
+R5
+R6
+!i113 1
+R7
+R8
+vRIJ_CPU
+!s10a 1591788750
+R1
+!i10b 1
+!s100 =>g>[kMZMiK0Z<d]2@W_?1
+IUdbXl[2DB^:3iNfdbzcNK3
+R2
+R0
+w1591788750
+8../../../../RIJ_CPU.srcs/sources_1/new/RIJ_cpu.v
+F../../../../RIJ_CPU.srcs/sources_1/new/RIJ_cpu.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+n@r@i@j_@c@p@u
+vtop_module_sim
+!s10a 1591848003
+R22
+!i10b 1
+!s100 NIz[9=lFR>Rb@=So^>W2F3
+IEb1dj2cU6G:WlWlTgGFcC1
+R2
+R0
+w1591848003
+8../../../../RIJ_CPU.srcs/sim_1/new/top_module_sim.v
+F../../../../RIJ_CPU.srcs/sim_1/new/top_module_sim.v
+L0 3
+R3
+r1
+!s85 0
+31
+R23
+R5
+R6
+!i113 1
+R7
+R8
+vxpm_memory_base
+R9
+R10
+R11
+!i10b 1
+!s100 n8h4SHWBMN=2AXb2cg1dK1
+Ic3m308OB>kh;jZ2K=1Xel1
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 57
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8
+vxpm_memory_dpdistram
+R9
+R10
+R11
+!i10b 1
+!s100 ?AHecN7ghiRW_oekfFUJ>1
+Ihc[2C[0mRfzOfEMcO]QBZ2
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 8072
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8
+vxpm_memory_dprom
+R9
+R10
+R11
+!i10b 1
+!s100 g^<ecJkdiY:M5EA<]U3eU1
+IP9QSk=cHZ4faPT^RkZ4Lh3
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 8210
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8
+vxpm_memory_sdpram
+R9
+R10
+R11
+!i10b 1
+!s100 ;=k0bM8IHj>WoPUeC`2c_3
+IQ<jKZVU80EzeWN;3Ph0Wi2
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 8368
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8
+vxpm_memory_spram
+R9
+R10
+R11
+!i10b 1
+!s100 9YoB265`D2jP9mjfQHQgE0
+I`WK8KcJOLPCb8R1^lNlN]3
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 8527
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8
+vxpm_memory_sprom
+R9
+R10
+R11
+!i10b 1
+!s100 I`NENEgSSQhVF>A?V`@MD3
+ISQ]Jcila]K_^V8>:0@5Pm1
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 8675
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8
+vxpm_memory_tdpram
+R9
+R10
+R11
+!i10b 1
+!s100 iHOKhEH3_l7gQ4gb<Md=K2
+IoXL=efm=R_j9j70EdABAS0
+R2
+R12
+S1
+R0
+R13
+R14
+R15
+L0 8813
+R3
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R8

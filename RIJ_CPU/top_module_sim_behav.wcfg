@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_module_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_module_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="704000001fs"></ZoomEndTime>
+      <Cursor1Time time="24056100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/top_module_sim/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/ALU_F" type="array">
+      <obj_property name="ElementShortName">ALU_F[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_F[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/M_W_Data" type="array">
+      <obj_property name="ElementShortName">M_W_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_W_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/M_R_Data" type="array">
+      <obj_property name="ElementShortName">M_R_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_R_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/Inst_code" type="array">
+      <obj_property name="ElementShortName">Inst_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst_code[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/mem_store/addra" type="array">
+      <obj_property name="ElementShortName">addra[7:2]</obj_property>
+      <obj_property name="ObjectShortName">addra[7:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/Decode_control/PC_s" type="array">
+      <obj_property name="ElementShortName">PC_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/OP" type="array">
+      <obj_property name="ElementShortName">OP[5:0]</obj_property>
+      <obj_property name="ObjectShortName">OP[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/pc_s" type="array">
+      <obj_property name="ElementShortName">pc_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/Write_Reg" type="logic">
+      <obj_property name="ElementShortName">Write_Reg</obj_property>
+      <obj_property name="ObjectShortName">Write_Reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/OF" type="logic">
+      <obj_property name="ElementShortName">OF</obj_property>
+      <obj_property name="ObjectShortName">OF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/ZF" type="logic">
+      <obj_property name="ElementShortName">ZF</obj_property>
+      <obj_property name="ObjectShortName">ZF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_sim/test/ALU_OP" type="array">
+      <obj_property name="ElementShortName">ALU_OP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP[2:0]</obj_property>
+   </wvobject>
+</wave_config>
