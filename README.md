@@ -1,3 +1,4 @@
+[toc]
 # HDU-jizu-RIJ_CPU
 HDU2020年计组实验
 
