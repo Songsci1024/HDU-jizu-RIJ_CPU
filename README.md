@@ -1,10 +1,9 @@
-[toc]
 # HDU-jizu-RIJ_CPU
 HDU2020年计组实验
 
 单周期、哈弗结构、硬布线结构的RIJ型cpu设计
 
-使用说明：
+下载说明：
 
 ```
 git init
